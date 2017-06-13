@@ -268,7 +268,7 @@ public class BundleSpec: QuickSpec {
                     
                     it("should return .none") {
                         let value = bundle.getInt(from: "My Personal Boolean Key")
-                        expect(value).to(beNil())
+                        expect(value).to(equal(1))
                     }
                     
                 }
