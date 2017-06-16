@@ -273,6 +273,15 @@ public class BundleSpec: QuickSpec {
                     
                 }
                 
+                context("when the value is not the expected type") {
+                    
+                    it("should return .none") {
+                        let value = bundle.getInt(from: "My Personal String Key")
+                        expect(value).to(beNil())
+                    }
+                    
+                }
+                
             }
             
             context("when the key doesn't exist in the bundle") {
