@@ -264,9 +264,9 @@ public class BundleSpec: QuickSpec {
                     
                 }
                 
-                context("when the value is not the expected type") {
+                context("when the value can be converted in other types") {
                     
-                    it("should return .none") {
+                    it("should return the numeric value") {
                         let value = bundle.getInt(from: "My Personal Boolean Key")
                         expect(value).to(equal(1))
                     }
