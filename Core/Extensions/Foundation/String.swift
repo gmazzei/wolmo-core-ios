@@ -162,5 +162,14 @@ public extension String {
         }
         return self
     }
+
+    /**
+     Returns the string with all its words capitalized.
+     It only recognized words by separation with whitespace.
+    */
+    public var capitalizedByWord: String {
+        let words = components(separatedBy: " ").map { $0.capitalized }
+        return words.joined(separator: " ")
+    }
     
 }

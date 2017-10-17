@@ -437,6 +437,45 @@ public class StringSpec: QuickSpec {
             
         }
         
+        describe("#capitalizedByWord") {
+            
+            context("when the string has only one word") {
+                
+                it("should work as #capitalize") {
+                    let string = "myonlyWord"
+                    expect(string.capitalizedByWord).to(equal("Myonlyword"))
+                }
+                
+            }
+            
+            context("when the string has more than one word") {
+                
+                it("should work as #capitalize but for each work") {
+                    let string = "my many Words"
+                    expect(string.capitalizedByWord).to(equal("My Many Words"))
+                }
+                
+            }
+            
+            context("when the string has staring whitespaces") {
+                
+                it("should capitalize each word and leave whitespaces as before") {
+                    let string = "   myonlyWord"
+                    expect(string.capitalizedByWord).to(equal("   Myonlyword"))
+                }
+                
+            }
+            
+            context("when the string has ending whitespaces") {
+                
+                it("should capitalize each word and leave whitespaces as before") {
+                    let string = "myonlyWord   "
+                    expect(string.capitalizedByWord).to(equal("Myonlyword   "))
+                }
+                
+            }
+        }
+        
     }
     // swiftlint:enable function_body_length
 
