@@ -82,7 +82,7 @@ public extension SignalProducerProtocol where Value: ResultProtocol {
      */
     public func filterValues() -> SignalProducer<Value.Value, Error> {
         return filter {
-            if let _ = $0.value {
+            if $0.value != nil {
                 return true
             }
             return false
@@ -98,7 +98,7 @@ public extension SignalProducerProtocol where Value: ResultProtocol {
      */
     public func filterErrors() -> SignalProducer<Value.Error, Error> {
         return filter {
-            if let _ = $0.error {
+            if $0.error != nil {
                 return true
             }
             return false

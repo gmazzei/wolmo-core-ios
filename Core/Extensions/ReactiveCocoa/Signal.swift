@@ -80,7 +80,7 @@ public extension SignalProtocol where Value: ResultProtocol {
     */
     public func filterValues() -> Signal<Value.Value, Error> {
         return filter {
-            if let _ = $0.value {
+            if $0.value != nil {
                 return true
             }
             return false
@@ -95,7 +95,7 @@ public extension SignalProtocol where Value: ResultProtocol {
      */
     public func filterErrors() -> Signal<Value.Error, Error> {
         return filter {
-            if let _ = $0.error {
+            if $0.error != nil {
                 return true
             }
             return false
