@@ -84,8 +84,9 @@
 		CE3A9B9D1E607B28005D7E8F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B871E607B28005D7E8F /* UITableView.swift */; };
 		CE3A9B9E1E607B28005D7E8F /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B881E607B28005D7E8F /* UITextField.swift */; };
 		CE3A9B9F1E607B28005D7E8F /* Collapsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B8A1E607B28005D7E8F /* Collapsable.swift */; };
-		CE3A9BA11E607B28005D7E8F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B8C1E607B28005D7E8F /* UIView.swift */; };
+		CE3A9BA11E607B28005D7E8F /* Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B8C1E607B28005D7E8F /* Borders.swift */; };
 		CE3A9BA21E607B28005D7E8F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B8D1E607B28005D7E8F /* UIViewController.swift */; };
+		CE4F2CB82135ED9F007BB465 /* AddInto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F2CB72135ED9F007BB465 /* AddInto.swift */; };
 		CE6E9A1C20C59FB60068CC7A /* CustomFontProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E9A1B20C59FB60068CC7A /* CustomFontProvider.swift */; };
 		CE6E9A1E20C5A1CE0068CC7A /* UIFontSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E9A1D20C5A1CE0068CC7A /* UIFontSpec.swift */; };
 		CE74869E2047073D00636D98 /* WolmoCore.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9D896AB81CDE3EC5008B0E5F /* WolmoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -278,8 +279,9 @@
 		CE3A9B871E607B28005D7E8F /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		CE3A9B881E607B28005D7E8F /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		CE3A9B8A1E607B28005D7E8F /* Collapsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collapsable.swift; sourceTree = "<group>"; };
-		CE3A9B8C1E607B28005D7E8F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CE3A9B8C1E607B28005D7E8F /* Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borders.swift; sourceTree = "<group>"; };
 		CE3A9B8D1E607B28005D7E8F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CE4F2CB72135ED9F007BB465 /* AddInto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInto.swift; sourceTree = "<group>"; };
 		CE6E9A1B20C59FB60068CC7A /* CustomFontProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontProvider.swift; sourceTree = "<group>"; };
 		CE6E9A1D20C5A1CE0068CC7A /* UIFontSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontSpec.swift; sourceTree = "<group>"; };
 		CE7486A22047089E00636D98 /* ReactiveMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMapKit.framework; path = Carthage/Build/iOS/ReactiveMapKit.framework; sourceTree = "<group>"; };
@@ -561,7 +563,8 @@
 			children = (
 				CE0DA7D01FD847D600D0B1E3 /* Gradient.swift */,
 				CE3A9B8A1E607B28005D7E8F /* Collapsable.swift */,
-				CE3A9B8C1E607B28005D7E8F /* UIView.swift */,
+				CE3A9B8C1E607B28005D7E8F /* Borders.swift */,
+				CE4F2CB72135ED9F007BB465 /* AddInto.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -880,6 +883,7 @@
 				CE1186921EA7A5FE00105D6F /* General.swift in Sources */,
 				CE3A9B9F1E607B28005D7E8F /* Collapsable.swift in Sources */,
 				B988B97C1D244D6300824685 /* AlertViewPresenter.swift in Sources */,
+				CE4F2CB82135ED9F007BB465 /* AddInto.swift in Sources */,
 				B988B9731D244BAE00824685 /* AssociatedObject.swift in Sources */,
 				CE3A9B9C1E607B28005D7E8F /* UIColor.swift in Sources */,
 				CE1DDFDE209A646B007471A0 /* SimpleAnimation.swift in Sources */,
@@ -897,7 +901,7 @@
 				CE1186891EA79EFF00105D6F /* NibLoadable.swift in Sources */,
 				B988B9811D24621000824685 /* DeviceType.swift in Sources */,
 				B988B97E1D244D6300824685 /* ErrorAlertViewModel.swift in Sources */,
-				CE3A9BA11E607B28005D7E8F /* UIView.swift in Sources */,
+				CE3A9BA11E607B28005D7E8F /* Borders.swift in Sources */,
 				CE3A9B9B1E607B28005D7E8F /* UIButton.swift in Sources */,
 				CE0DA7D11FD847D600D0B1E3 /* Gradient.swift in Sources */,
 			);
