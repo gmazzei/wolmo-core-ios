@@ -87,6 +87,7 @@
 		CE3A9BA11E607B28005D7E8F /* Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B8C1E607B28005D7E8F /* Borders.swift */; };
 		CE3A9BA21E607B28005D7E8F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A9B8D1E607B28005D7E8F /* UIViewController.swift */; };
 		CE4F2CB82135ED9F007BB465 /* AddInto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F2CB72135ED9F007BB465 /* AddInto.swift */; };
+		CE4F2CBA2135EFF4007BB465 /* SafeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F2CB92135EFF4007BB465 /* SafeLayout.swift */; };
 		CE6E9A1C20C59FB60068CC7A /* CustomFontProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E9A1B20C59FB60068CC7A /* CustomFontProvider.swift */; };
 		CE6E9A1E20C5A1CE0068CC7A /* UIFontSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E9A1D20C5A1CE0068CC7A /* UIFontSpec.swift */; };
 		CE74869E2047073D00636D98 /* WolmoCore.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9D896AB81CDE3EC5008B0E5F /* WolmoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -282,6 +283,7 @@
 		CE3A9B8C1E607B28005D7E8F /* Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borders.swift; sourceTree = "<group>"; };
 		CE3A9B8D1E607B28005D7E8F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		CE4F2CB72135ED9F007BB465 /* AddInto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInto.swift; sourceTree = "<group>"; };
+		CE4F2CB92135EFF4007BB465 /* SafeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeLayout.swift; sourceTree = "<group>"; };
 		CE6E9A1B20C59FB60068CC7A /* CustomFontProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontProvider.swift; sourceTree = "<group>"; };
 		CE6E9A1D20C5A1CE0068CC7A /* UIFontSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontSpec.swift; sourceTree = "<group>"; };
 		CE7486A22047089E00636D98 /* ReactiveMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMapKit.framework; path = Carthage/Build/iOS/ReactiveMapKit.framework; sourceTree = "<group>"; };
@@ -565,6 +567,7 @@
 				CE3A9B8A1E607B28005D7E8F /* Collapsable.swift */,
 				CE3A9B8C1E607B28005D7E8F /* Borders.swift */,
 				CE4F2CB72135ED9F007BB465 /* AddInto.swift */,
+				CE4F2CB92135EFF4007BB465 /* SafeLayout.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -889,6 +892,7 @@
 				CE1DDFDE209A646B007471A0 /* SimpleAnimation.swift in Sources */,
 				CE3A9B9A1E607B28005D7E8F /* UIAlertController.swift in Sources */,
 				B988B97D1D244D6300824685 /* ConfirmationAlertViewModel.swift in Sources */,
+				CE4F2CBA2135EFF4007BB465 /* SafeLayout.swift in Sources */,
 				CE1DDFDD209A646B007471A0 /* ChainedAnimation.swift in Sources */,
 				CE3A9B901E607B28005D7E8F /* Array.swift in Sources */,
 				CE3A9B931E607B28005D7E8F /* Bundle.swift in Sources */,

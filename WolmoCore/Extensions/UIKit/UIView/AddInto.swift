@@ -43,31 +43,58 @@ public extension UIView {
     public func add(into containerView: UIView,
                     with insets: UIEdgeInsets = .zero,
                     in viewPositioning: ViewPositioning = .front,
-                    layout: LayoutMode = .constraints) {
+                    layout: LayoutMode = .constraints,
+                    respectSafeArea: Bool = false) {
 
         switch layout {
         case .constraints:
             containerView.addSubview(self)
-
             translatesAutoresizingMaskIntoConstraints = false
-
-            topAnchor.constraint(equalTo: containerView.topAnchor, constant: insets.top).isActive = true
-            containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: insets.bottom).isActive = true
-            leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: insets.left).isActive = true
-            containerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: insets.right).isActive = true
+            addConstraints(containerView: containerView, insets: insets, respectSafeArea: respectSafeArea)
         case .frame:
-            let bounds = containerView.bounds
-            let x = insets.left
-            let y = insets.top
-            let width = bounds.width - x - insets.right
-            let  height = bounds.height - y - insets.bottom
-            frame = CGRect(x: x, y: y, width: width, height: height)
+            frame = getFrame(containerView: containerView, insets: insets, respectSafeArea: respectSafeArea)
 
             containerView.addSubview(self)
         }
 
         if case viewPositioning = ViewPositioning.back {
             containerView.sendSubview(toBack: self)
+        }
+    }
+
+    private func addConstraints(containerView: UIView, insets: UIEdgeInsets, respectSafeArea: Bool) {
+        if respectSafeArea {
+            NSLayoutConstraint.activate([
+                topAnchor.constraint(equalTo: containerView.safeLayoutGuide.topAnchor, constant: insets.top),
+                containerView.safeLayoutGuide.bottomAnchor.constraint(equalTo: bottomAnchor, constant: insets.bottom),
+                leadingAnchor.constraint(equalTo: containerView.safeLayoutGuide.leadingAnchor, constant: insets.left),
+                containerView.safeLayoutGuide.trailingAnchor.constraint(equalTo: trailingAnchor, constant: insets.right)
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                topAnchor.constraint(equalTo: containerView.topAnchor, constant: insets.top),
+                containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: insets.bottom),
+                leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: insets.left),
+                containerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: insets.right)
+            ])
+        }
+    }
+
+    private func getFrame(containerView: UIView, insets: UIEdgeInsets, respectSafeArea: Bool) -> CGRect {
+        if respectSafeArea {
+            let bounds = containerView.bounds
+            let x = containerView.safeLayoutInsets.left + insets.left
+            let y = containerView.safeLayoutInsets.top + insets.top
+            let width = bounds.width - x - insets.right - containerView.safeLayoutInsets.right
+            let height = bounds.height - y - insets.bottom - containerView.safeLayoutInsets.bottom
+            return CGRect(x: x, y: y, width: width, height: height)
+        } else {
+            let bounds = containerView.bounds
+            let x = insets.left
+            let y = insets.top
+            let width = bounds.width - x - insets.right
+            let height = bounds.height - y - insets.bottom
+            return CGRect(x: x, y: y, width: width, height: height)
         }
     }
 
