@@ -10,8 +10,10 @@ ignore:
   - WolmoCore/Utilities/DeviceType.swift
   - WolmoCore/Extensions/UIKit/UIButton.swift
   - WolmoCore/Extensions/UIKit/UIView/Collapsable.swift
-  - WolmoCore/Extensions/UIKit/UIView/UIView.swift
+  - WolmoCore/Extensions/UIKit/UIView/AddInto.swift
+  - WolmoCore/Extensions/UIKit/UIView/Borders.swift
   - WolmoCore/Extensions/UIKit/UIView/Gradient.swift
+  - WolmoCore/Extensions/UIKit/UIView/SafeLayout.swift
   - WolmoCore/Extensions/UIKit/UIViewController.swift
   - WolmoCore/Extensions/Animations/*
 # AV objects can't be tested.
