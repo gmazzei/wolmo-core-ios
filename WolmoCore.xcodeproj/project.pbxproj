@@ -103,6 +103,7 @@
 		CE7486AC2047091300636D98 /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B988B9661D24457D00824685 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE7486AD2047091300636D98 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B988B9671D24457D00824685 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE80E0F11E82D1F9005C300E /* PathAppendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80E0F01E82D1F9005C300E /* PathAppendable.swift */; };
+		CE8B49AE213882B5004558C9 /* ViewController+SimpleAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B49AC2138829C004558C9 /* ViewController+SimpleAnimations.swift */; };
 		CE983D471F913350004E8712 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE983D461F913350004E8712 /* Localizable.strings */; };
 		CEB8ED261FE968410037ED3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8ED251FE968410037ED3D /* AppDelegate.swift */; };
 		CEB8ED281FE968410037ED3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8ED271FE968410037ED3D /* ViewController.swift */; };
@@ -288,6 +289,7 @@
 		CE6E9A1D20C5A1CE0068CC7A /* UIFontSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontSpec.swift; sourceTree = "<group>"; };
 		CE7486A22047089E00636D98 /* ReactiveMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMapKit.framework; path = Carthage/Build/iOS/ReactiveMapKit.framework; sourceTree = "<group>"; };
 		CE80E0F01E82D1F9005C300E /* PathAppendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathAppendable.swift; sourceTree = "<group>"; };
+		CE8B49AC2138829C004558C9 /* ViewController+SimpleAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SimpleAnimations.swift"; sourceTree = "<group>"; };
 		CE983D461F913350004E8712 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CEB8ED231FE968410037ED3D /* WolmoCoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolmoCoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB8ED251FE968410037ED3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -508,6 +510,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1DE005209A66A9007471A0 /* ViewController.swift */,
+				CE8B49AC2138829C004558C9 /* ViewController+SimpleAnimations.swift */,
 				CE1DE006209A66A9007471A0 /* Assets.xcassets */,
 				CE1DE007209A66A9007471A0 /* LaunchScreen.storyboard */,
 				CE1DE009209A66A9007471A0 /* Main.storyboard */,
@@ -948,6 +951,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEECA031209A7059001A7E37 /* AppDelegate.swift in Sources */,
+				CE8B49AE213882B5004558C9 /* ViewController+SimpleAnimations.swift in Sources */,
 				CEECA02C209A7047001A7E37 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

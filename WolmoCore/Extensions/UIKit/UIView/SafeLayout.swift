@@ -17,8 +17,7 @@ public extension UIView {
     public var safeLayoutGuide: UILayoutGuide {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide
-        }
-        else {
+        } else {
             let id = "\(accessibilityIdentifier ?? "").safe_layout"
             if let safeGuide = layoutGuides.filter({ $0.identifier == id }).first {
                 return safeGuide

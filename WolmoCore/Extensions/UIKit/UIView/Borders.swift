@@ -40,8 +40,6 @@ public enum BorderPosition {
     }
 }
 
-
-
 /**
     Represents a UIView that is used to create a border to another view.
     
