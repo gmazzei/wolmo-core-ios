@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CB8BAB4216F82FF00C8D6C1 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8BAB3216F82FF00C8D6C1 /* Comparable.swift */; };
+		0CB8BAB6216F835E00C8D6C1 /* ComparableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8BAB5216F835E00C8D6C1 /* ComparableSpec.swift */; };
 		2D9229821F5D9BF5004F9A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82058CE1EEF39230002D7D4 /* Assets.xcassets */; };
 		9D896ABC1CDE3EC5008B0E5F /* WolmoCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D896ABB1CDE3EC5008B0E5F /* WolmoCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D896AC31CDE3EC5008B0E5F /* WolmoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D896AB81CDE3EC5008B0E5F /* WolmoCore.framework */; };
@@ -178,6 +180,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CB8BAB3216F82FF00C8D6C1 /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		0CB8BAB5216F835E00C8D6C1 /* ComparableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableSpec.swift; sourceTree = "<group>"; };
 		9D896AB81CDE3EC5008B0E5F /* WolmoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WolmoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D896ABB1CDE3EC5008B0E5F /* WolmoCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WolmoCore.h; sourceTree = "<group>"; };
 		9D896ABD1CDE3EC5008B0E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -470,6 +474,7 @@
 				CE3A9B7F1E607B28005D7E8F /* String.swift */,
 				CE3A9B7C1E607B28005D7E8F /* Timer.swift */,
 				CE3A9B7D1E607B28005D7E8F /* URL.swift */,
+				0CB8BAB3216F82FF00C8D6C1 /* Comparable.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -541,6 +546,7 @@
 				CEE9BFAA1E8986D400D0E65D /* StringSpec.swift */,
 				CEE9BFAB1E8986D400D0E65D /* TimerSpec.swift */,
 				CEE9BFAC1E8986D400D0E65D /* URLSpec.swift */,
+				0CB8BAB5216F835E00C8D6C1 /* ComparableSpec.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -800,6 +806,7 @@
 			files = (
 				CEEC517E1EE5ECD300BC41FE /* UILabel.swift in Sources */,
 				CE80E0F11E82D1F9005C300E /* PathAppendable.swift in Sources */,
+				0CB8BAB4216F82FF00C8D6C1 /* Comparable.swift in Sources */,
 				CE3A9BA21E607B28005D7E8F /* UIViewController.swift in Sources */,
 				CE228AE01EF2FE1E00097B19 /* UIFont.swift in Sources */,
 				B9F63CC21D5CE7FA00D09C1D /* Identifiable.swift in Sources */,
@@ -845,6 +852,7 @@
 				CEE9BFC01E8986D400D0E65D /* UITextFieldSpec.swift in Sources */,
 				CE11868B1EA7A0CD00105D6F /* UITableViewSpec.swift in Sources */,
 				CEE9BFB61E8986D400D0E65D /* DateSpec.swift in Sources */,
+				0CB8BAB6216F835E00C8D6C1 /* ComparableSpec.swift in Sources */,
 				CEE9BFC81E8986DC00D0E65D /* ConfirmationAlertViewModelSpec.swift in Sources */,
 				CEE9BFCB1E8986DC00D0E65D /* IdentifiableSpec.swift in Sources */,
 				CEE9BFB71E8986D400D0E65D /* DictionarySpec.swift in Sources */,
