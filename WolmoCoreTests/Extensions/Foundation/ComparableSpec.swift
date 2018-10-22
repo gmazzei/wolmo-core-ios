@@ -24,6 +24,7 @@ public class ComparableSpec: QuickSpec {
             context("when the number is higher than the interval") {
                 
                 let testNumber = 8
+                
                 it("should return the max number of the interval") {
                     let expectedNumber = 6
                     expect(testNumber.clamp(min: min, max: max)).to(equal(expectedNumber))
@@ -33,6 +34,7 @@ public class ComparableSpec: QuickSpec {
             context("when the number is lower than the interval") {
                 
                 let testNumber = 2
+                
                 it("should return the min number of the interval") {
                     let expectedNumber = 3
                     expect(testNumber.clamp(min: min, max: max)).to(equal(expectedNumber))
@@ -42,6 +44,7 @@ public class ComparableSpec: QuickSpec {
             context("when the number is contained in the interval") {
                 
                 let testNumber = 5
+                
                 it("should return the same number") {
                     let expectedNumber = 5
                     expect(testNumber.clamp(min: min, max: max)).to(equal(expectedNumber))
