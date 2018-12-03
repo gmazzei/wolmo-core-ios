@@ -184,4 +184,23 @@ public extension String {
         return image
     }
     
+    /**
+     Repeats string multiple times
+     
+     - parameter lhs: string to repeat.
+     - parameter rhs: number of times to repeat character.
+     */
+    public static func * (lhs: String, rhs: Int) -> String {
+        return String(repeating: lhs, count: rhs)
+    }
+    
+    /**
+     Repeats string multiple times
+     
+     - parameter lhs: number of times to repeat character.
+     - parameter rhs: string to repeat.
+     */
+    public static func * (lhs: Int, rhs: String) -> String {
+        return String(repeating: rhs, count: lhs)
+    }
 }
