@@ -185,7 +185,7 @@ public extension String {
     }
     
     /**
-     Repeats string multiple times
+     Repeats a string multiple times
      
      - parameter lhs: string to repeat.
      - parameter rhs: number of times to repeat character.
@@ -195,7 +195,7 @@ public extension String {
     }
     
     /**
-     Repeats string multiple times
+     Repeats a string multiple times
      
      - parameter lhs: number of times to repeat character.
      - parameter rhs: string to repeat.
