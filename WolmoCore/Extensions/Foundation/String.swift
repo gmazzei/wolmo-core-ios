@@ -203,5 +203,4 @@ public extension String {
     public static func * (lhs: Int, rhs: String) -> String {
         return String(repeating: rhs, count: lhs)
     }
-    
 }
